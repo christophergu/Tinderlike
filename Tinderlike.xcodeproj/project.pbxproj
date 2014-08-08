@@ -21,6 +21,9 @@
 		DFB6168619947083006C69C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB6166819947083006C69C2 /* UIKit.framework */; };
 		DFB6168E19947083006C69C2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFB6168C19947083006C69C2 /* InfoPlist.strings */; };
 		DFB6169019947083006C69C2 /* TinderlikeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB6168F19947083006C69C2 /* TinderlikeTests.m */; };
+		DFB616A019947376006C69C2 /* DraggableView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB6169F19947376006C69C2 /* DraggableView.m */; };
+		DFB616A419948768006C69C2 /* HelloWorldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB616A219948768006C69C2 /* HelloWorldViewController.m */; };
+		DFB616A519948768006C69C2 /* HelloWorldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFB616A319948768006C69C2 /* HelloWorldViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,11 @@
 		DFB6168B19947083006C69C2 /* TinderlikeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TinderlikeTests-Info.plist"; sourceTree = "<group>"; };
 		DFB6168D19947083006C69C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DFB6168F19947083006C69C2 /* TinderlikeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TinderlikeTests.m; sourceTree = "<group>"; };
+		DFB6169E19947376006C69C2 /* DraggableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraggableView.h; sourceTree = "<group>"; };
+		DFB6169F19947376006C69C2 /* DraggableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraggableView.m; sourceTree = "<group>"; };
+		DFB616A119948768006C69C2 /* HelloWorldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelloWorldViewController.h; sourceTree = "<group>"; };
+		DFB616A219948768006C69C2 /* HelloWorldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelloWorldViewController.m; sourceTree = "<group>"; };
+		DFB616A319948768006C69C2 /* HelloWorldViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelloWorldViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +123,8 @@
 				DFB6167319947083006C69C2 /* AppDelegate.h */,
 				DFB6167419947083006C69C2 /* AppDelegate.m */,
 				DFB6167619947083006C69C2 /* Main.storyboard */,
-				DFB6167919947083006C69C2 /* ViewController.h */,
-				DFB6167A19947083006C69C2 /* ViewController.m */,
+				DFB61699199470A0006C69C2 /* View */,
+				DFB6169A199470A8006C69C2 /* Controller */,
 				DFB6167C19947083006C69C2 /* Images.xcassets */,
 				DFB6166B19947083006C69C2 /* Supporting Files */,
 			);
@@ -126,6 +134,7 @@
 		DFB6166B19947083006C69C2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				DFB616A319948768006C69C2 /* HelloWorldViewController.xib */,
 				DFB6166C19947083006C69C2 /* Tinderlike-Info.plist */,
 				DFB6166D19947083006C69C2 /* InfoPlist.strings */,
 				DFB6167019947083006C69C2 /* main.m */,
@@ -150,6 +159,26 @@
 				DFB6168C19947083006C69C2 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DFB61699199470A0006C69C2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DFB6169E19947376006C69C2 /* DraggableView.h */,
+				DFB6169F19947376006C69C2 /* DraggableView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		DFB6169A199470A8006C69C2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DFB6167919947083006C69C2 /* ViewController.h */,
+				DFB6167A19947083006C69C2 /* ViewController.m */,
+				DFB616A119948768006C69C2 /* HelloWorldViewController.h */,
+				DFB616A219948768006C69C2 /* HelloWorldViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +257,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DFB616A519948768006C69C2 /* HelloWorldViewController.xib in Resources */,
 				DFB6167D19947083006C69C2 /* Images.xcassets in Resources */,
 				DFB6166F19947083006C69C2 /* InfoPlist.strings in Resources */,
 				DFB6167819947083006C69C2 /* Main.storyboard in Resources */,
@@ -251,6 +281,8 @@
 			files = (
 				DFB6167B19947083006C69C2 /* ViewController.m in Sources */,
 				DFB6167519947083006C69C2 /* AppDelegate.m in Sources */,
+				DFB616A419948768006C69C2 /* HelloWorldViewController.m in Sources */,
+				DFB616A019947376006C69C2 /* DraggableView.m in Sources */,
 				DFB6167119947083006C69C2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
